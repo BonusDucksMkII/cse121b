@@ -20,6 +20,8 @@ nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = `${currentYear}`;
 imgElement.setAttribute("src", "images/jtodd_small.jpg");
 imgElement.setAttribute("alt", "Profile image of Jonathan Todd");
+
+/* Step 5 - Array */
 foodElement.innerHTML = `${food}`;
 food.push(anotherFood);
 foodElement.innerHTML += `<br>${food}`;
@@ -27,10 +29,6 @@ food.shift();
 foodElement.innerHTML += `<br>${food}`;
 food.pop();
 foodElement.innerHTML += `<br>${food}`;
-
-
-/* Step 5 - Array */
-
 
 
 
