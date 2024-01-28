@@ -59,7 +59,7 @@ document.querySelector('#divideNumbers').addEventListener('click', divideNumbers
 
 
 /* Decision Structure */
-document.querySelector("#getTotal").addEventListener('click', );
+document.querySelector("#getTotal").addEventListener('click', divide(1, 2));
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
