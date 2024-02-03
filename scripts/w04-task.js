@@ -32,30 +32,36 @@ nameHTML.innerHTML = `${profile.firstName} ${profile.lastName}`;
 /* Photo with attributes */
 pic.setAttribute('src', profile.photo);
 
+/* Favorite Foods List*/
 for (let food in profile.favoriteFoods){
     newElement = document.createElement('li');
     newElement.innerText = profile.favoriteFoods[food];
     foods.appendChild(newElement);
 }
 
+/* Hobbies List */
 for (let hobby in profile.hobbies){
     newElement = document.createElement('li');
     newElement.innerText = profile.hobbies[hobby];
     hobbies.appendChild(newElement);
 }
 
+/* Places Lived DataList */
 for (let i = 0; i < 3; i++){
-    newElement = document.createElement('li');
-    newElement.innerText = `${profile.placesLived[0].place[i]}, ${profile.placesLived[0].length[i]}`;
+    newElement = document.createElement('dt');
+    newElement.innerText = `${profile.placesLived[0].place[i]}`;
+    places.appendChild(newElement);
+    newElement = document.createElement('dd');
+    newElement.innerText = `${profile.placesLived[0].length[i]}`;
     places.appendChild(newElement);
 }
 
-/* Favorite Foods List*/
 
 
-/* Hobbies List */
 
 
-/* Places Lived DataList */
+
+
+
 
 
