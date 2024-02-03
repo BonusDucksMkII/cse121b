@@ -37,7 +37,7 @@ const multiplyNumbers = () => {
     const mult1 = Number(document.querySelector('#factor1').value);
     const mult2 = Number(document.querySelector('#factor2').value);
 
-    document.querySelector('#product').value = multiply(number1, number2);
+    document.querySelector('#product').value = multiply(mult1, mult2);
 };
 
 document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers);
@@ -52,14 +52,28 @@ function divideNumbers(){
     const dividend = Number(document.querySelector('#dividend').value);
     const divisor = Number(document.querySelector('#divisor').value);
 
-    document.querySelector('#quotient').value = divide(number1, number2);
+    document.querySelector('#quotient').value = divide(dividend, divisor);
 }
 
 document.querySelector('#divideNumbers').addEventListener('click', divideNumbers);
 
 
 /* Decision Structure */
-document.querySelector("#getTotal").addEventListener('click', divide(1, 2));
+let userInput = Number(document.querySelector("#subtotal").value);
+let memberBox = document.querySelector("#member");
+
+document.querySelector("#getTotal").addEventListener('click', () => console.log(userInput));
+
+function inputValidate() {
+    if (memberBox.className === "checked"){
+        memberBox.classList.remove("checked");
+    } else {
+        memberBox.classList.add("checked");
+        
+    }
+}
+
+memberBox.addEventListener('click', inputValidate);
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
